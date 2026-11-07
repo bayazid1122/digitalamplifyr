@@ -150,6 +150,85 @@ h2{font-weight:800;letter-spacing:-.015em}
 .lk{width:min(320px,100%);display:grid;gap:10px;text-align:center}
 @media(min-width:801px){.side{background:var(--side);color:#f3ede4;border:0}.side .tab{color:#b9ae9f}.side .tab.on{background:rgba(255,255,255,.1);color:#fff}.side .tools button{background:transparent;color:#f3ede4;border-color:rgba(255,255,255,.16)}.side .sync{background:rgba(255,255,255,.08);color:#cfc5b6}.side .sync.ok{color:#6ee7a3}}
 @media(max-width:800px){.nav{backdrop-filter:blur(12px)}}
+.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.tools button,.tab{display:flex;align-items:center;gap:10px}
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.ic-b{width:40px;height:40px;padding:0;display:inline-grid;place-items:center;border-radius:12px}
+.ic-b.fb{color:#1877f2}.ic-b.call{color:var(--ac)}.ic-b.dis{opacity:.3;pointer-events:none}
+.tel{color:var(--ink);font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-width:0}
+.sm{display:inline-flex;align-items:center;gap:5px}.sm .i{width:15px;height:15px}
+.cv{display:flex;align-items:center;gap:8px}.rw .cv>span{display:none}
+.cd .c-a{display:grid;grid-template-columns:1fr 40px 40px 40px;gap:8px}
+.bk{display:grid;gap:8px}
+.it{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--ln);border-radius:12px;font-size:15px;color:var(--ink);margin:0}
+.it .nm2{flex:1;font-weight:600}.it small{display:block;font-weight:400;color:var(--mut);font-size:12px}
+.it input{width:20px;height:20px}
+.up{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+@media(max-width:800px){
+.tab{flex-direction:column;gap:2px;font-size:11px;padding:6px 0;justify-content:center}
+.side .sync{max-width:44vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px}
+#bAdd{position:fixed;right:16px;bottom:calc(78px + env(safe-area-inset-bottom,0px));z-index:32;border-radius:99px;padding:0 20px;height:50px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 10px 24px -8px color-mix(in srgb,var(--ac) 80%,#000)}
+.selmode #bAdd{display:none}
+#toast{bottom:calc(140px + env(safe-area-inset-bottom,0px))}
+.bar input{flex:1 1 100%;order:-1}.bar select{flex:1 1 30%;min-width:0}
+.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-14px;padding-inline:14px}.chip{flex:none;white-space:nowrap}
+input,select,textarea{font-size:16px}
+.lst{background:none;border:0;box-shadow:none;border-radius:0}
+.rw{background:var(--sf);border:1px solid var(--ln)!important;border-radius:16px;margin-bottom:10px;padding:12px;box-shadow:var(--shadow)}
+.rw>.ck{grid-column:1;grid-row:1}.rw>.c-n{grid-column:2;grid-row:1}.rw>.stsel{grid-column:3;grid-row:1}
+.rw>.c-p,.rw>.cv,.rw>.c-d,.rw>.c-a{grid-column:1/-1}
+.rw .cv>span{display:inline}
+.c-p{justify-content:space-between}
+.c-a{display:grid;grid-template-columns:1fr 46px 46px 46px;gap:8px}
+.ic-b{width:46px;height:46px}.c-a .wa{height:46px}
+.cd .c-a{grid-template-columns:1fr 46px 46px 46px}
+.board{scroll-snap-type:x mandatory}.col{scroll-snap-align:start}
+}
+.tools button{font-size:13px;padding:8px 10px;gap:8px;text-align:left}
+@media(min-width:801px) and (max-width:1100px){.app{grid-template-columns:200px 1fr}}
+@media(max-width:800px){
+.brand{order:1}.side .sync{order:2;flex:0 1 auto;min-width:0}#bMore{order:3;width:44px;height:44px;padding:0;font-size:20px;border-radius:14px}
+#bAdd{order:4;position:static;width:44px;height:44px;padding:0;justify-content:center;border-radius:14px;box-shadow:0 6px 16px -6px color-mix(in srgb,var(--ac) 70%,transparent)}
+#bAdd span{display:none}#bAdd .i{width:22px;height:22px}
+.selmode #bAdd{display:inline-flex}
+#toast{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:800px){
+.side{position:sticky;top:env(safe-area-inset-top,0px);z-index:25;background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--ln);padding:8px 14px}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+}
+@media(max-width:800px){
+.side{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--bg)}
+.nav{position:fixed;left:0;right:0;top:auto;bottom:0}
+}
+@media(min-width:801px){
+#fbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:-20px -22px 12px;padding:16px 22px 2px;background:color-mix(in srgb,var(--bg) 92%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+#fbar .chips{margin-bottom:10px}
+}
+@media(min-width:801px) and (max-width:1100px){#fbar{margin:-16px -16px 12px;padding:14px 16px 2px}}
+.dh{display:flex;align-items:center;gap:10px}.dh .i{width:26px;height:26px;color:var(--ac)}
+.sec{display:grid;gap:10px;padding:14px 0;border-top:1px solid var(--ln)}
+.sec:first-of-type{border-top:0;padding-top:4px}
+.sct{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px}.sct .i{width:18px;height:18px;color:var(--ac)}
+.fi{position:relative}
+.fi>.i,.fi>.lfi{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--mut);pointer-events:none;display:flex}
+.fi>.lfi .i{width:18px;height:18px}
+.fi input,.fi select,.fi textarea{padding-left:38px}
+.fi.ta>.i{top:15px;transform:none}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border-radius:99px;padding:7px 14px;font-size:14px}
+.opt.on{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:600}
+.foot button{display:inline-flex;align-items:center;gap:6px}
+dialog .foot{position:sticky;bottom:-20px;background:var(--sf);padding:12px 0 2px;margin-top:6px;border-top:1px solid var(--ln)}
+details.hs summary{cursor:pointer;font-weight:600;color:var(--ink)}
+
+#auth{position:fixed;inset:0;z-index:90;background:var(--bg);display:none;place-items:center;padding:20px}
+#auth.show{display:grid}
+.au{width:min(360px,100%);display:grid;gap:10px;text-align:left}
+.au .alk{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.au .lnk{background:none;border:0;padding:4px 0;color:var(--ac);font-size:13px;text-decoration:underline}
+.au .am{min-height:20px;font-size:13px;color:var(--mut)}
+.au .am.err{color:var(--dg)}.au .am.ok{color:var(--wa)}
 </style>
 </head>
 <body>
@@ -157,9 +236,9 @@ h2{font-weight:800;letter-spacing:-.015em}
 <aside class="side">
   <div class="brand">Client<b>Hunter</b></div>
   <nav class="nav"><button class="tab" data-v="today">Today</button><button class="tab" data-v="list">Clients</button><button class="tab" data-v="board">Board</button><button class="tab" data-v="report">Reports</button></nav>
-  <div class="tools" id="tools"><button id="bImp">Import from sheet</button><button id="bExp">Export / backup</button><button id="bSet">Settings</button><button id="bTh">Light / dark</button></div>
+  <div class="tools" id="tools"><button id="bImp">Import from sheet</button><button id="bExp">Export / backup</button><button id="bSet">Settings</button><button id="bTh">Light / dark</button><button id="bOut">Logout</button></div>
   <button class="more" id="bMore" aria-label="Menu">⋯</button>
-  <div class="sync" id="sync">Connecting…</div>
+  
   <button class="pri" id="bAdd">+ New client</button>
 </aside>
 <main>
@@ -170,9 +249,18 @@ h2{font-weight:800;letter-spacing:-.015em}
 </div>
 <div id="toast" role="status"></div>
 <div id="lock"><div class="lk"><h2>🔒 Client Hunter</h2><input id="lp" type="password" inputmode="numeric" placeholder="PIN" autocomplete="off"><button class="pri" id="lu">Unlock</button><div class="mut" id="le"></div></div></div>
+<div id="auth" class="show"><div class="lk au"><div class="mut" style="text-align:center">লোড হচ্ছে…</div></div></div>
 <dialog id="dlg"></dialog>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.1"></script>
 <script>
+/* ===== SETUP: Supabase > Project Settings > API থেকে এই দুটো বসান ===== */
+const SUPABASE_URL='https://sjgszheszvksatinwhia.supabase.co';
+const SUPABASE_KEY='sb_publishable_8-UJMYOh2ABSlyvsGry5cA_GBJFROxq';
+const sbErr=!window.supabase?'Supabase library লোড হয়নি। Internet বা ad-blocker দেখুন':/^PASTE/.test(SUPABASE_URL)||/^PASTE/.test(SUPABASE_KEY)?'Setup বাকি: ফাইলের শুরুতে Supabase URL ও key বসান':!/^https:\/\/[a-z0-9-]+\.supabase\.(co|in)\/?$/i.test(SUPABASE_URL.trim())?'Supabase URL ঠিক নয়। এরকম হতে হবে: https://xxxx.supabase.co':/^sb_secret_|service_role/.test(SUPABASE_KEY)?'এটা secret key! এখানে শুধু publishable (বা anon) key বসান':'';
+const sb=sbErr?null:window.supabase.createClient(SUPABASE_URL.trim().replace(/\/$/,''),SUPABASE_KEY.trim());
+/* claude.ai-এর বাইরে (Vercel) download কাজ করানোর shim */
+if(typeof claude==='undefined'){window.claude={use:async n=>n==='downloads'?{save:async o=>{const b=new Blob([o.data],{type:'application/octet-stream'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=o.filename;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000)}}:null}}
 const K='client_hunter_v1';
 const D={clients:[],stages:['New','Contacted','Replied','Potential','Client','Not interested'],cats:['General'],sources:['Facebook page','Google Maps','Referral'],log:{},target:30,fu:3,brand:'',seq:[{d:3,t:'Follow-up'},{d:7,t:'Follow-up'}],tpls:[{n:'First offer',t:'আসসালামু আলাইকুম {name}, আমি [আপনার নাম]। আপনার ব্যবসার জন্য আমাদের একটি বিশেষ অফার আছে। বিস্তারিত জানতে চাইলে জানাবেন।'},{n:'Follow-up',t:'আসসালামু আলাইকুম {name}, আগের মেসেজটি দেখেছেন কি? অফারটি নিয়ে কথা বলতে চাইলে জানাবেন।'}]};
 let S=load(),f={q:'',st:'',cat:'',src:'',sort:'new'},view='today',sel=new Set(),sendIds=[],pg=30,lk='';
@@ -183,7 +271,7 @@ const PK='ch_pin',pinOn=()=>{try{return localStorage.getItem(PK)}catch(e){return
 async function hash(p){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('ch:'+p));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
 function lock(){if(!pinOn())return;const d=$('#dlg');if(d.open)d.close();$('#lock').classList.add('show');$('#lp').value='';$('#lp').focus()}
 const setupOf=()=>{const o=Object.assign({},S);delete o.clients;return JSON.stringify(o)};
-function sync(t,ok){const e=$('#sync');if(e){e.textContent=t;e.className='sync'+(ok?' ok':'')}}
+function sync(t){if(t.indexOf('⚠')===0)toast(t)}
 function save(){
   if(!cloud){try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}return}
   const cur={},ops=[];S.clients.forEach(c=>{cur[c.id]=JSON.stringify(c)});const sc=setupOf();
@@ -193,29 +281,105 @@ function save(){
   prev=cur;prevS=sc;if(!ops.length)return;sync('☁ Saving…',1);
   sq=sq.then(()=>Promise.all(ops.map(f=>f()))).then(()=>sync('☁ Saved to secure cloud',1)).catch(()=>sync('⚠ Save হয়নি, Export করে backup নিন',0));
 }
-async function initCloud(){
-  const tm=setTimeout(()=>{if(!loaded)sync('Local mode (cloud সংযোগ হয়নি)',0)},10000);
+/* ===== Login + cloud (Supabase) ===== */
+let cuid=null,recovering=false,amode='in';
+function aerr(e){const m=String((e&&e.message)||e||'');
+  if(/failed to fetch|networkerror|load failed/i.test(m))return 'Supabase-এর সাথে সংযোগ হচ্ছে না। URL ও internet দেখুন';
+  if(/invalid api key|apikey/i.test(m))return 'API key ভুল। Supabase থেকে publishable/anon key আবার কপি করুন';
+  if(/signups? not allowed|signup.*disabled/i.test(m))return 'নতুন অ্যাকাউন্ট খোলা বন্ধ আছে';
+  if(/Invalid login/i.test(m))return 'Email বা password ভুল';
+  if(/not confirmed/i.test(m))return 'আগে email confirm করুন (inbox ও spam দেখুন)';
+  if(/already registered/i.test(m))return 'এই email দিয়ে অ্যাকাউন্ট আছে, Login করুন';
+  if(/rate limit|too many|seconds/i.test(m))return 'কিছুক্ষণ পর আবার চেষ্টা করুন';
+  if(/same password/i.test(m))return 'নতুন password আগেরটার থেকে আলাদা হতে হবে';
+  return m||'কিছু একটা সমস্যা হয়েছে'}
+function showAuth(m,msg,kind){$('#auth').classList.add('show');authView(m,msg,kind)}
+function hideAuth(){$('#auth').classList.remove('show')}
+function authView(m,msg,kind){
+  amode=m;const old=$('#ae'),em=old?old.value:'';
+  const f=(id,type,ph,ac,v)=>'<input id="'+id+'" type="'+type+'" placeholder="'+ph+'" autocomplete="'+ac+'" value="'+esc(v||'')+'">';
+  let h='<div class="brand" style="text-align:center;font-size:28px">Client<b>Hunter</b></div>';
+  if(m==='reset'){
+    h+='<div class="mut" style="text-align:center">নতুন password দিন</div>'+f('ap','password','নতুন password (কমপক্ষে ৬ অক্ষর)','new-password')+f('ap2','password','আবার লিখুন','new-password')+'<button class="pri" id="ago">Password সেভ করুন</button>';
+  }else{
+    h+=f('ae','email','Email','email',em);
+    if(m!=='forgot')h+=f('ap','password',m==='up'?'Password (কমপক্ষে ৬ অক্ষর)':'Password',m==='up'?'new-password':'current-password');
+    h+='<button class="pri" id="ago">'+(m==='up'?'অ্যাকাউন্ট খুলুন':m==='forgot'?'Reset link পাঠান':'Login')+'</button>';
+    h+='<div class="alk">'+(m==='in'?'<button type="button" class="lnk" data-m="forgot">Password ভুলে গেছেন?</button><button type="button" class="lnk" data-m="up">নতুন অ্যাকাউন্ট খুলুন</button>':'<button type="button" class="lnk" data-m="in">← Login-এ ফিরুন</button>')+'</div>';
+  }
+  h+='<div class="am '+(kind||'')+'" id="am" role="status">'+esc(msg||'')+'</div>';
+  const box=$('#auth .lk');box.innerHTML=h;
+  box.onclick=e=>{const b=e.target.closest('[data-m]');if(b)authView(b.dataset.m)};
+  box.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();$('#ago').click()}};
+  $('#ago').onclick=authGo;
+  const first=$('#ae')||$('#ap');if(first)first.focus();
+}
+async function authGo(){
+  const say=(t,k)=>{const a=$('#am');if(a){a.textContent=t;a.className='am '+(k||'')}};
+  if(!sb){say(sbErr,'err');return}
+  const e=($('#ae')?$('#ae').value:'').trim(),p=$('#ap')?$('#ap').value:'';
+  const btn=$('#ago');btn.disabled=true;
   try{
-    const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);
-    const me=user&&await user.id();
-    if(!db||!me){sync('Local mode: claude.ai-তে sign in করুন',0);return}
-    const col=db.collection('data/users/'+me);
-    const un=col.onSnapshot(snap=>{
-      if(!loaded){
-        let st=null;const cl=[];snap.docs.forEach(d=>{if(d.id==='settings')st=d.data();else if(d.id.indexOf('c_')===0)cl.push(d.data())});
-        const lo=load();
-        if(!st&&!cl.length&&lo.clients.length){
-          if(!confirm('এই ব্রাউজারে '+lo.clients.length+' জন ক্লায়েন্টের ডেটা আছে। সুরক্ষিত cloud-এ তুলবেন? (Cancel চাপলে ডেটা শুধু এই ব্রাউজারে থাকবে)')){loaded=true;clearTimeout(tm);un();sync('Local mode (cloud বন্ধ)',0);return}
-          S=lo;cloud=col;prev={};prevS='';save();try{localStorage.removeItem(K)}catch(e){}
-        }else{S=Object.assign(JSON.parse(JSON.stringify(D)),st||{},{clients:cl});cloud=col;prev={};cl.forEach(c=>{prev[c.id]=JSON.stringify(c)});prevS=setupOf();if(!st)save()}
-        loaded=true;clearTimeout(tm);sync('☁ Secure cloud sync চালু',1);render();return}
-      snap.docChanges().forEach(ch=>{const d=ch.doc;if(d.metadata.hasPendingWrites)return;
-        if(d.id==='settings'){if(ch.type!=='removed'){Object.assign(S,d.data());prevS=setupOf()}}
-        else if(d.id.indexOf('c_')===0){const id=d.id.slice(2),i=S.clients.findIndex(c=>c.id===id);
-          if(ch.type==='removed'){if(i>=0)S.clients.splice(i,1);delete prev[id]}
-          else{const o=d.data();if(i>=0)S.clients[i]=o;else S.clients.unshift(o);prev[id]=JSON.stringify(o)}}});
-      render()},e=>sync('⚠ Cloud error: '+e.code,0));
-  }catch(e){sync('Local mode',0)}
+    if(amode==='in'){
+      if(!e||!p){say('Email ও password দিন','err');return}
+      const r=await sb.auth.signInWithPassword({email:e,password:p});
+      if(r.error)say(aerr(r.error),'err');
+    }else if(amode==='up'){
+      if(!e||!p){say('Email ও password দিন','err');return}
+      if(p.length<6){say('Password কমপক্ষে ৬ অক্ষর হতে হবে','err');return}
+      const r=await sb.auth.signUp({email:e,password:p,options:{emailRedirectTo:location.origin+location.pathname}});
+      if(r.error)say(aerr(r.error),'err');
+      else if(!r.data.session)authView('in','Email-এ confirmation link পাঠানো হয়েছে। link-এ ক্লিক করে তারপর Login করুন','ok');
+    }else if(amode==='forgot'){
+      if(!e){say('আপনার email দিন','err');return}
+      const r=await sb.auth.resetPasswordForEmail(e,{redirectTo:location.origin+location.pathname});
+      if(r.error)say(aerr(r.error),'err');
+      else say('Reset link আপনার email-এ পাঠানো হয়েছে। Spam folder-ও দেখুন','ok');
+    }else{
+      const p2=$('#ap2').value;
+      if(p.length<6){say('Password কমপক্ষে ৬ অক্ষর হতে হবে','err');return}
+      if(p!==p2){say('দুটো password মিলছে না','err');return}
+      const r=await sb.auth.updateUser({password:p});
+      if(r.error){say(aerr(r.error),'err');return}
+      recovering=false;history.replaceState(null,'',location.pathname+location.search);
+      const s=(await sb.auth.getSession()).data.session;
+      if(s&&s.user){hideAuth();if(cuid!==s.user.id){cuid=s.user.id;startCloud(s.user)}toast('Password বদলানো হয়েছে ✓')}
+      else authView('in','Password বদলানো হয়েছে, এখন Login করুন','ok');
+    }
+  }catch(x){say(aerr(x),'err')}
+  finally{const b=$('#ago');if(b)b.disabled=false}
+}
+function resetState(){S=JSON.parse(JSON.stringify(D));cloud=null;prev={};prevS='';loaded=false;sel.clear();try{render()}catch(e){}}
+function initAuth(){
+  if(!sb){showAuth('in',sbErr,'err');return}
+  const hh=location.hash;
+  if(/type=recovery/.test(hh))recovering=true;
+  else if(/error_code|error_description/.test(hh)){history.replaceState(null,'',location.pathname+location.search);setTimeout(()=>showAuth('forgot','Link-এর মেয়াদ শেষ বা ভুল। আবার reset link নিন','err'),0)}
+  sb.auth.onAuthStateChange((ev,ses)=>{
+    if(ev==='SIGNED_OUT'){recovering=false;cuid=null;resetState();showAuth('in');return}
+    if(ev==='PASSWORD_RECOVERY'){recovering=true;showAuth('reset');return}
+    if(recovering){if(ev==='INITIAL_SESSION'&&ses)showAuth('reset');return}
+    if(ses&&ses.user){if(cuid!==ses.user.id){cuid=ses.user.id;hideAuth();setTimeout(()=>startCloud(ses.user),0)}}
+    else if(ev==='INITIAL_SESSION'&&!$('#ae'))showAuth('in');
+  });
+}
+async function startCloud(user){
+  const r=await sb.from('ch_docs').select('key,data');
+  if(r.error){cuid=null;showAuth('in','Login হয়েছে, কিন্তু ডেটা লোড হয়নি: '+r.error.message+(/ch_docs|relation|schema cache/i.test(r.error.message)?' — supabase-setup.sql কি Run করেছেন?':''),'err');return}
+  let st=null;const cl=[];
+  (r.data||[]).forEach(d=>{if(d.key==='settings')st=d.data;else if(d.key.indexOf('c_')===0)cl.push(d.data)});
+  const me=user.id;
+  const col={doc:k=>({
+    set:d=>sb.from('ch_docs').upsert({user_id:me,key:k,data:d}).then(x=>{if(x.error)throw x.error}),
+    delete:()=>sb.from('ch_docs').delete().eq('user_id',me).eq('key',k).then(x=>{if(x.error)throw x.error})})};
+  const lo=load();
+  if(!st&&!cl.length&&lo.clients.length&&confirm('এই ব্রাউজারে '+lo.clients.length+' জন ক্লায়েন্টের ডেটা আছে। আপনার অ্যাকাউন্টে তুলবেন?')){
+    S=lo;cloud=col;prev={};prevS='';save();try{localStorage.removeItem(K)}catch(e){}
+  }else{
+    S=Object.assign(JSON.parse(JSON.stringify(D)),st||{},{clients:cl});cloud=col;prev={};
+    cl.forEach(c=>{prev[c.id]=JSON.stringify(c)});prevS=setupOf();if(!st)save();
+  }
+  loaded=true;render();
 }
 function boot(){
   const bump=()=>{last=Date.now()};['click','keydown','touchstart'].forEach(ev=>addEventListener(ev,bump,{passive:true}));
@@ -224,7 +388,7 @@ function boot(){
   $('#lu').onclick=async()=>{let ok=false;try{ok=(await hash($('#lp').value))===pinOn()}catch(e){}if(ok){$('#lock').classList.remove('show');$('#le').textContent='';last=Date.now()}else $('#le').textContent='ভুল PIN'};
   $('#lp').onkeydown=e=>{if(e.key==='Enter')$('#lu').click()};
   $('#dlg').addEventListener('click',e=>{if(e.target.id==='pr'){try{localStorage.removeItem(PK)}catch(_){}e.target.textContent='PIN বন্ধ ✓'}});
-  lock();initCloud();
+  skinUI();$('#bOut').innerHTML=ic('lock')+'<span>Logout</span>';lock();initAuth();
 }
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -241,7 +405,7 @@ const opts=(a,v)=>a.map(x=>'<option'+(x===v?' selected':'')+'>'+esc(x)+'</option
 const dl=(id,a)=>'<datalist id="'+id+'">'+a.map(x=>'<option value="'+esc(x)+'">').join('')+'</datalist>';
 function norm(p){const d=String(p||'').replace(/\D/g,'');if(d.startsWith('880'))return d;if(d.startsWith('0'))return '88'+d;if(d.length===10)return '880'+d;return d}
 const local=p=>{const n=norm(p);return n.startsWith('880')?'0'+n.slice(3):n};
-async function copy(t,b){try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()}if(b){const o=b.textContent;b.textContent='Copied ✓';setTimeout(()=>{b.textContent=o},1200)}}
+async function copy(t,b){try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()}if(b){const o=b.innerHTML;b.textContent='Copied ✓';setTimeout(()=>{b.innerHTML=o},1200)}}
 
 /* WhatsApp Business / Personal */
 const AND=/Android/i.test(navigator.userAgent),IOS=/iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -304,7 +468,7 @@ function render(){
   $('#fcat').innerHTML='<option value="">All categories</option>'+S.cats.map(c=>'<option'+(f.cat===c?' selected':'')+'>'+esc(c)+'</option>').join('');
   $('#fsrc').innerHTML='<option value="">All sources</option>'+S.sources.map(c=>'<option'+(f.src===c?' selected':'')+'>'+esc(c)+'</option>').join('');
   $('#main').innerHTML=view==='today'?todayHTML():view==='list'?listHTML():view==='report'?reportHTML():boardHTML();
-  $('#selbar').classList.toggle('show',sel.size>0);$('#selc').textContent=sel.size+' selected';
+  $('#selbar').classList.toggle('show',sel.size>0);document.body.classList.toggle('selmode',sel.size>0);$('#selc').textContent=sel.size+' selected';
 }
 function dlg(h){const d=$('#dlg');d.innerHTML=h;if(!d.open)d.showModal()}
 const close=()=>$('#dlg').close();
@@ -359,9 +523,15 @@ function openSend(ids){
 /* import / export / settings */
 function openImport(){
   dlg('<h2>Import from Google Sheet</h2><p class="mut">Sheet-এর সারি copy করে paste করুন। কলামের ক্রম: Name, Page Link, WhatsApp, Reach out (“Done” থাকলে Contacted ধরা হবে)। একই নম্বর দুইবার যোগ হবে না।</p>'
-  +'<div class="g"><textarea id="ip" style="min-height:150px" placeholder="JY LIGHT&#9;https://facebook.com/...&#9;01823-030024&#9;Done"></textarea><div class="g g2"><div><label>Category</label><input id="ic" list="cl" value="'+esc(S.cats[0])+'">'+dl('cl',S.cats)+'</div><div><label>Contact via</label><select id="ia"><option value="">Ask each time</option><option>Business</option><option>Personal</option></select></div></div></div>'
+  +'<div class="g"><div><label class="btn up" for="if">'+ic('up')+'<span>Upload file (.csv, .xlsx, .tsv, .txt, backup .json)</span></label><input id="if" type="file" accept=".csv,.tsv,.txt,.xlsx,.xls,.json" hidden><div class="mut" id="ifn" style="margin-top:6px">Google Sheet থেকে File > Download > CSV বা Excel করে এখানে দিন, অথবা নিচে paste করুন।</div></div><textarea id="ip" style="min-height:150px" placeholder="JY LIGHT&#9;https://facebook.com/...&#9;01823-030024&#9;Done"></textarea><div class="g g2"><div><label>Category</label><input id="ic" list="cl" value="'+esc(S.cats[0])+'">'+dl('cl',S.cats)+'</div><div><label>Contact via</label><select id="ia"><option value="">Ask each time</option><option>Business</option><option>Personal</option></select></div></div></div>'
   +'<div class="foot"><button id="x">Cancel</button><button class="pri" id="go">Import</button></div>');
   $('#x').onclick=close;
+  function loadXLSX(){return window.XLSX?Promise.resolve():new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
+  $('#if').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{let t;
+    if(/\.xlsx?$/i.test(f.name)){await loadXLSX();const wb=XLSX.read(await f.arrayBuffer(),{type:'array'});t=XLSX.utils.sheet_to_csv(wb.Sheets[wb.SheetNames[0]])}else t=(await f.text()).replace(/^\uFEFF/,'');
+    if(t.trim()[0]==='{'){$('#ip').value=t;$('#ifn').textContent=f.name;return}
+    const R=parseCSV(t);$('#ip').value=R.map(r=>r.map(x=>String(x).replace(/[\t\r\n]+/g,' ').trim()).join('\t')).join('\n');
+    $('#ifn').textContent=f.name+': '+R.length+' সারি পাওয়া গেছে। নিচে দেখে Import চাপুন।'}catch(x){$('#ifn').textContent='File পড়া যায়নি, CSV হিসেবে download করে আবার চেষ্টা করুন।'}e.target.value=''};
   $('#go').onclick=()=>{
     const raw=$('#ip').value.trim();if(raw[0]==='{'){try{const o=JSON.parse(raw),ids=new Set(S.clients.map(c=>c.id));let k=0;(o.clients||[]).forEach(c=>{if(c&&c.id&&c.name&&!ids.has(c.id)){S.clients.push(c);k++}});save();close();render();toast(k+' client restore হয়েছে')}catch(e){toast('Backup পড়া যায়নি')}return}
     const cat=$('#ic').value.trim()||'General',acc=$('#ia').value;if(!S.cats.includes(cat))S.cats.push(cat);
@@ -394,7 +564,7 @@ function openSettings(){
 
 /* events */
 const tools=$('#tools'),menu=fn=>()=>{tools.classList.remove('open');fn()};
-$('#bAdd').onclick=()=>openEdit();$('#bImp').onclick=menu(openImport);$('#bExp').onclick=menu(openExport);$('#bSet').onclick=menu(openSettings);
+$('#bAdd').onclick=()=>openEdit();$('#bImp').onclick=menu(openImport);$('#bExp').onclick=menu(openExport);$('#bSet').onclick=menu(openSettings);$('#bOut').onclick=menu(()=>{if(sb)sb.auth.signOut()});
 $('#bMore').onclick=()=>tools.classList.toggle('open');
 $('#bTh').onclick=menu(()=>{const r=document.documentElement;r.dataset.theme=getComputedStyle(r).colorScheme==='dark'?'light':'dark'});
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{view=b.dataset.v;render()});
@@ -425,6 +595,196 @@ M.ondragleave=e=>{const c=e.target.closest('.col');if(c)c.classList.remove('over
 M.ondrop=e=>{const col=e.target.closest('.col');if(!col)return;e.preventDefault();const c=cl(e.dataTransfer.getData('text/plain'));
   if(c&&c.stage!==col.dataset.st)setStage(c,col.dataset.st);render()};
 render();
+/* icons, mobile-friendly cards/rows, separate-file backup & restore */
+function ic(n,s){const I={
+fb:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+wa:'<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path fill="currentColor" stroke="none" d="M9.5 8.5c0 3 2.5 5.5 5.5 5.5l1-1.4-1.8-.9-.7.7a3.8 3.8 0 0 1-1.9-1.9l.7-.7-.9-1.8z"/>',
+ph:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+cp:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+ed:'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+dn:'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>',
+up:'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>',
+pl:'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
+sl:'<line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>',
+gr:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/>',
+ua:'<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>',
+mo:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+home:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
+users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+cols:'<rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="3" width="7" height="11" rx="1"/>',
+bar:'<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>'};
+  return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"'+(s?' style="width:'+s+'px;height:'+s+'px"':'')+'>'+(I[n]||ICX()[n]||'')+'</svg>'}
+function skinUI(){
+  const T={today:'home',list:'users',board:'cols',report:'bar'};
+  document.querySelectorAll('.tab').forEach(b=>{b.innerHTML=ic(T[b.dataset.v])+'<span>'+b.textContent+'</span>'});
+  $('#bImp').innerHTML=ic('up')+'<span>Import from sheet</span>';$('#bExp').innerHTML=ic('dn')+'<span>Backup &amp; Restore</span>';
+  $('#bSet').innerHTML=ic('sl')+'<span>Settings</span>';$('#bTh').innerHTML=ic('mo')+'<span>Light / dark</span>';$('#bAdd').innerHTML=ic('ua')+'<span>New client</span>';$('#bMore').innerHTML=ic('gr');$('#bMore').setAttribute('aria-label','Menu')}
+function fixLink(l){l=String(l||'').trim();return /^https?:\/\//i.test(l)?l:(/\.\w/.test(l)?'https://'+l:'')}
+const metaOf=c=>esc([c.cat,c.source].filter(Boolean).join(', '))+(c.value?(c.cat||c.source?', ':'')+(+c.value).toLocaleString()+'৳':'');
+const telOf=c=>{const n=norm(c.phone);return n?'<a class="tel" href="tel:+'+n+'">'+ic('ph',16)+esc(c.phone)+'</a>'+(okNum(c.phone)?'':'<span class="late" title="নম্বর সঠিক নয়">⚠</span>')+'<button class="sm b-cp" aria-label="Copy number">'+ic('cp')+'<span>Copy</span></button>':'<span class="mut">No number</span>'};
+const stOf=c=>'<select class="stsel" style="--c:hsl('+hue(c.stage)+' 60% 45%)" aria-label="Stage">'+opts(S.stages,c.stage)+'</select>';
+const cvOf=c=>'<div class="cv"><span class="mut">WhatsApp:</span><div class="seg"><button data-a="Business" class="'+(c.acc==='Business'?'on':'')+'">Business</button><button data-a="Personal" class="'+(c.acc==='Personal'?'on':'')+'">Personal</button></div></div>';
+const dtOf=c=>{const late=c.fu&&c.fu<=today()&&!closed(c);return '<div class="mut c-d'+(late?' late':'')+'">'+(c.fu?'Follow-up '+c.fu:'')+(c.last?(c.fu?', ':'')+'Last '+esc(c.last):'')+(c.fu||c.last?'':'—')+'</div>'};
+function acts(c){const n=norm(c.phone),u=fixLink(c.link);
+  return '<button class="wa b-send">'+ic('wa')+'<span>WhatsApp</span></button>'
+  +(u?'<a class="btn ic-b fb" href="'+esc(u)+'" target="_blank" rel="noopener" aria-label="Facebook page" title="Facebook page">'+ic('fb')+'</a>':'<span class="btn ic-b fb dis">'+ic('fb')+'</span>')
+  +(n?'<a class="btn ic-b call" href="tel:+'+n+'" aria-label="Call" title="Call">'+ic('ph')+'</a>':'<span class="btn ic-b dis">'+ic('ph')+'</span>')
+  +'<button class="ic-b b-edit" aria-label="Edit" title="Edit">'+ic('ed')+'</button>'}
+const whoOf=c=>'<div class="av" style="--h:'+hue(c.name)+'">'+esc(Array.from(c.name)[0]||'?').toUpperCase()+'</div><div class="who"><div class="nm">'+esc(c.name)+'</div><div class="mut">'+metaOf(c)+'</div></div>';
+function card(c){return '<div class="cd" draggable="true" data-id="'+c.id+'"><div class="top"><input type="checkbox" class="ck" aria-label="Select" '+(sel.has(c.id)?'checked':'')+'>'+whoOf(c)+stOf(c)+'</div><div class="ph">'+telOf(c)+'</div>'+cvOf(c)+dtOf(c)+'<div class="c-a">'+acts(c)+'</div></div>'}
+function row(c){return '<div class="rw" data-id="'+c.id+'"><input type="checkbox" class="ck" aria-label="Select" '+(sel.has(c.id)?'checked':'')+'><div class="c-n">'+whoOf(c)+'</div><div class="c-p">'+telOf(c)+'</div>'+stOf(c)+cvOf(c)+dtOf(c)+'<div class="c-a">'+acts(c)+'</div></div>'}
+function pick(v){let L=S.clients;if(v==='sel')L=L.filter(c=>sel.has(c.id));else if(v==='flt')L=filtered();else if(v.indexOf('c:')===0)L=L.filter(c=>c.cat===v.slice(2));else if(v.indexOf('s:')===0)L=L.filter(c=>c.stage===v.slice(2));return L}
+function parseCSV(t){const dl=(t.split(/\r?\n/)[0]||'').indexOf('\t')>=0?'\t':',',R=[];let r=[],c='',q=false;
+  for(let i=0;i<t.length;i++){const h=t[i];
+    if(q){if(h==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=h}
+    else if(h==='"'&&c==='')q=true;
+    else if(h===dl){r.push(c);c=''}
+    else if(h==='\n'||h==='\r'){if(h==='\r'&&t[i+1]==='\n')i++;r.push(c);c='';if(r.some(x=>x.trim()))R.push(r);r=[]}
+    else c+=h}
+  r.push(c);if(r.some(x=>x.trim()))R.push(r);return R}
+function addClients(L){let a=0,s=0;const ids=new Set(S.clients.map(c=>c.id)),ph=new Set(S.clients.map(c=>norm(c.phone)).filter(Boolean));
+  L.forEach(c=>{if(!c||!c.name)return;c.id=c.id||uid();const p=norm(c.phone);if(ids.has(c.id)||(p&&ph.has(p))){s++;return}
+    c.stage=c.stage||S.stages[0];c.cat=c.cat||'General';ids.add(c.id);if(p)ph.add(p);S.clients.push(c);a++;
+    if(!S.cats.includes(c.cat))S.cats.push(c.cat);if(c.source&&!S.sources.includes(c.source))S.sources.push(c.source);if(!S.stages.includes(c.stage))S.stages.push(c.stage)});
+  return a+' client যোগ হয়েছে, '+s+'টি আগে থেকেই ছিল (বাদ)'}
+function restoreOne(name,t){
+  t=t.replace(/^\uFEFF/,'');const k=t.trim()[0];
+  if(k!=='{'&&k!=='['){
+    const R=parseCSV(t);if(!R.length)return 'ফাঁকা file';
+    const H=R[0].map(x=>x.trim().toLowerCase()),has=/^(name|নাম)/.test(H[0]),ix=(re,d)=>has?H.findIndex(h=>re.test(h)):d;
+    const I={n:ix(/^name|^নাম/,0),l:ix(/link|page/,1),p:ix(/whatsapp|phone|number/,2),r:ix(/^client reach|^reach/,3),c:ix(/categ/,-1),o:ix(/source/,-1),s:ix(/stage/,-1),a:ix(/contact/,-1),v:ix(/value/,-1),f:ix(/follow/,-1),la:ix(/^last/,-1),no:ix(/note/,-1)};
+    const g=(r,i)=>i>=0&&r[i]!=null?String(r[i]).trim():'';
+    return addClients(R.slice(has?1:0).map(r=>{const done=/done/i.test(g(r,I.r));return {id:uid(),name:g(r,I.n),link:g(r,I.l),phone:g(r,I.p),cat:g(r,I.c)||'General',source:g(r,I.o),stage:g(r,I.s)||(done?(S.stages[1]||S.stages[0]):S.stages[0]),acc:g(r,I.a),value:g(r,I.v),fu:g(r,I.f),last:g(r,I.la)||(done?'Done':''),note:g(r,I.no),h:[]}}))}
+  const o=JSON.parse(t);let ty=o.type,d=o.data;if(Array.isArray(o)){ty='clients';d=o}else if(!ty&&o.clients){ty='clients';d=o.clients}
+  if(ty==='clients')return addClients(d||[]);
+  if(ty==='templates'){let a=0;(d||[]).forEach(x=>{if(x&&x.n&&x.t&&!S.tpls.some(y=>y.n===x.n)){S.tpls.push({n:x.n,t:x.t});a++}});return a+' template যোগ হয়েছে'}
+  if(ty==='settings'){const u=(a,b)=>[...new Set([...(b||[]),...a])];S.stages=u(S.stages,d.stages);S.cats=u(S.cats,d.cats);S.sources=u(S.sources,d.sources);if(d.seq)S.seq=d.seq;if(d.target)S.target=d.target;if(d.fu)S.fu=d.fu;if(d.brand!=null)S.brand=d.brand;return 'Settings restore হয়েছে'}
+  if(ty==='stats'){const Lg=(d&&d.log)||{};let a=0;for(const x in Lg){if((S.log[x]||0)<Lg[x]){S.log[x]=Lg[x];a++}}return a+' দিনের stats restore হয়েছে'}
+  return 'অচেনা file'}
+function openExport(){
+  const so='<option value="all">সব ক্লায়েন্ট ('+S.clients.length+')</option>'+(sel.size?'<option value="sel">Selected ('+sel.size+')</option>':'')+'<option value="flt">বর্তমান filter ('+filtered().length+')</option><optgroup label="Category">'+S.cats.map(c=>'<option value="c:'+esc(c)+'">'+esc(c)+' ('+S.clients.filter(x=>x.cat===c).length+')</option>').join('')+'</optgroup><optgroup label="Stage">'+S.stages.map(c=>'<option value="s:'+esc(c)+'">'+esc(c)+' ('+S.clients.filter(x=>x.stage===c).length+')</option>').join('')+'</optgroup>';
+  const IT=[['clients','Clients (.json)','Restore-এর জন্য সেরা'],['csv','Clients (.csv)','Excel / Google Sheet-এ খোলে'],['templates','Message templates (.json)',S.tpls.length+'টি template'],['settings','Settings (.json)','Stage, category, source, sequence'],['stats','Activity stats (.json)',Object.keys(S.log).length+' দিনের হিসাব']];
+  dlg('<h2>Backup &amp; Restore</h2><div class="bk"><div><label>কোন ক্লায়েন্টদের backup নেবেন?</label><select id="bs">'+so+'</select></div>'+IT.map(i=>'<label class="it"><input type="checkbox" class="bkc" value="'+i[0]+'" '+(i[0]==='csv'?'':'checked')+'><div class="nm2">'+i[1]+'<small>'+i[2]+'</small></div><button type="button" class="ic-b dl1" data-k="'+i[0]+'" aria-label="Download">'+ic('dn')+'</button></label>').join('')+'<button class="pri" id="bdl">'+ic('dn')+'<span>Download selected (আলাদা আলাদা file)</span></button><button id="bcp">'+ic('cp')+'<span>Copy clients (Sheet-এ paste)</span></button></div>'
+  +'<div class="sh"><h2>Gmail Backup</h2></div><p class="mut">বাছাই করা file গুলো নিজের Gmail-এ email করে রাখা যায় (সর্বোচ্চ ২৫ MB)। Gmail ও Drive একই Google storage ব্যবহার করে। Drive-এ সরাসরি upload এখানে সম্ভব নয়, তাই Download করে Drive-এ দিন।</p><div class="fi">'+ic('ml')+'<input id="gm" type="email" inputmode="email" placeholder="your@gmail.com" value="'+esc(gmailOf())+'"></div><div class="row" style="margin-top:8px"><button class="pri" id="gsend" type="button">'+ic('tg')+'<span>Gmail-এ পাঠান</span></button><button id="gdraft" type="button">'+ic('nt')+'<span>শুধু Draft বানান</span></button><a class="btn up" href="https://drive.google.com/drive/my-drive" target="_blank" rel="noopener">'+ic('gl')+'<span>Google Drive খোলুন</span></a></div><div class="mut" id="gst" style="margin-top:6px"></div>'
+  +'<div class="sh"><h2>Restore</h2></div><p class="mut">আগের backup file (.json বা .csv) বেছে নিন, একসঙ্গে একাধিক file-ও চলবে। যা আগে থেকে আছে তা বদলাবে না, শুধু নতুনগুলো যোগ হবে।</p><label class="btn up" for="bf">'+ic('up')+'<span>Choose backup file(s)</span></label><input id="bf" type="file" accept=".json,.csv,.txt" multiple hidden><div class="mut" id="br" style="margin-top:8px"></div><div class="foot"><button id="x">Close</button></div>');
+  const stamp=today(),sc=()=>$('#bs').value,L=()=>pick(sc()),slug=()=>{const v=sc();return v==='all'?'all':v==='sel'?'selected':v==='flt'?'filtered':v.slice(0,1)+'-'+(v.slice(2).replace(/[^\w]+/g,'')||'x')};
+  const wrap=(t,d)=>JSON.stringify({app:'client-hunter',v:1,type:t,date:stamp,data:d},null,1),q=x=>'"'+String(x==null?'':x).replace(/"/g,'""')+'"';
+  const rows=()=>[['Name','Page Link','WhatsApp','Category','Source','Stage','Contact via','Deal value','Follow-up','Last reach out','Note']].concat(L().map(c=>[c.name,c.link,c.phone,c.cat,c.source||'',c.stage,c.acc||'',c.value||'',c.fu||'',c.last||'',c.note||'']));
+  const build=k=>k==='clients'?{n:'clients-'+slug()+'-'+stamp+'.json',d:wrap('clients',L())}
+    :k==='csv'?{n:'clients-'+slug()+'-'+stamp+'.csv',d:'\uFEFF'+rows().map(r=>r.map(q).join(',')).join('\r\n')}
+    :k==='templates'?{n:'templates-'+stamp+'.json',d:wrap('templates',S.tpls)}
+    :k==='settings'?{n:'settings-'+stamp+'.json',d:wrap('settings',{stages:S.stages,cats:S.cats,sources:S.sources,seq:S.seq,target:S.target,fu:S.fu,brand:S.brand})}
+    :{n:'stats-'+stamp+'.json',d:wrap('stats',{log:S.log})};
+  async function dl(ks){const d=await claude.use('downloads');if(!d){toast('এই view-তে download চালু নেই');return}let ok=0;for(const k of ks){const b=build(k);try{await d.save({filename:b.n,data:b.d});ok++}catch(e){}}toast(ok+'/'+ks.length+'টি file download হয়েছে')}
+  $('#bdl').onclick=()=>{const ks=[...document.querySelectorAll('.bkc:checked')].map(x=>x.value);if(!ks.length){toast('অন্তত একটি বেছে নিন');return}dl(ks)};
+  document.querySelectorAll('.dl1').forEach(b=>{b.onclick=e=>{e.preventDefault();dl([b.dataset.k])}});
+  $('#bcp').onclick=()=>copy(rows().map(r=>r.map(x=>String(x).replace(/[\t\r\n]+/g,' ')).join('\t')).join('\n'),$('#bcp'));
+  const b64=s=>{const u=new TextEncoder().encode(s);let r='';for(let i=0;i<u.length;i+=8192)r+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return btoa(r)};
+  const gm=async tool=>{
+    const em=$('#gm').value.trim(),ks=[...document.querySelectorAll('.bkc:checked')].map(x=>x.value),st=$('#gst');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){st.textContent='সঠিক email ঠিকানা লিখুন';return}
+    if(!ks.length){st.textContent='অন্তত একটি file বেছে নিন';return}
+    try{localStorage.setItem('ch_mail',em)}catch(e){}
+    const files=ks.map(build);if(files.reduce((a,f)=>a+f.d.length*1.4,0)>24e6){st.textContent='file গুলো ২৫ MB-এর বেশি, কম বাছুন';return}
+    if(tool==='send_message'&&!confirm('Backup '+files.length+'টি file '+em+' ঠিকানায় email করা হবে। এগিয়ে যাবেন?'))return;
+    const mcp=await claude.use('mcp');if(!mcp){st.textContent='এই view-তে Gmail সংযোগ চালু নেই। claude.ai-তে artifactটি খোলা দরকার।';return}
+    st.textContent='পাঠানো হচ্ছে…';
+    try{
+      await mcp.callTool('Gmail',tool,{to:[em],subject:'Client Hunter backup '+stamp,body:'Client Hunter backup ('+stamp+'), '+files.length+'টি file সংযুক্ত।',attachments:files.map(f=>({filename:f.n,mimeType:/\.csv$/.test(f.n)?'text/csv':'application/json',content:b64(f.d)}))});
+      st.textContent=tool==='send_message'?'✓ Email পাঠানো হয়েছে, Gmail-এর Inbox/Sent দেখুন':'✓ Draft তৈরি হয়েছে, Gmail → Drafts দেখুন'
+    }catch(e){const c=e&&e.code;st.textContent=c==='server_not_connected'||c==='selection_required'?'Gmail connector যুক্ত নেই। claude.ai → Settings → Connectors-এ Gmail যুক্ত করুন':c==='needs_reauth'?'Gmail আবার connect করুন (Settings → Connectors)':(c==='not_in_manifest'||c==='approval_required'||c==='blocked_by_policy')?'Gmail ব্যবহারের অনুমতি পাওয়া যায়নি':c==='tool_error'?'Gmail পাঠাতে পারেনি: '+String(e.message||'').slice(0,120):'সংযোগ সমস্যা। পাঠানো হয়েছে কি না Gmail Sent-এ দেখে নিন, না হলে আবার চেষ্টা করুন'}
+  };
+  $('#gsend').onclick=()=>gm('send_message');$('#gdraft').onclick=()=>gm('create_draft');
+  $('#bf').onchange=async e=>{const r=[];for(const f of e.target.files){try{r.push(f.name+': '+restoreOne(f.name,await f.text()))}catch(x){r.push(f.name+': পড়া যায়নি')}}save();render();$('#br').innerHTML=r.map(esc).join('<br>');e.target.value=''};
+  $('#x').onclick=close;
+}
+function ICX(){return {
+yt:'<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>',
+ig:'<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>',
+tt:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+li:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
+tw:'<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>',
+tg:'<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',
+mp:'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+gl:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+lk:'<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>',
+user:'<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+tag:'<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>',
+cmp:'<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>',
+lay:'<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',
+cal:'<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+tk:'<text x="12" y="18" text-anchor="middle" font-size="19" font-weight="700" stroke="none" fill="currentColor">৳</text>',
+nt:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',
+tr:'<polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6m5 0V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2"/>',
+ml:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
+ck:'<polyline points="20 6 9 17 4 12"/>',
+lock:'<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+clk:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+tgt:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+brf:'<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>'}}
+function gmailOf(){try{return localStorage.getItem('ch_mail')||''}catch(e){return ''}}
+function plat(u){u=fixLink(u);if(!u)return null;let h='';try{const x=new URL(u);h=x.hostname.replace(/^www\./,'').toLowerCase()+x.pathname}catch(e){return null}
+  const P=[['yt',/(^|\.)(youtube\.com|youtu\.be)/,'#ff0000','YouTube'],['fb',/(^|\.)(facebook\.com|fb\.com|fb\.me|fb\.watch)/,'#1877f2','Facebook'],['ig',/(^|\.)instagram\.com/,'#e1306c','Instagram'],['tt',/(^|\.)tiktok\.com/,'var(--ink)','TikTok'],['li',/(^|\.)linkedin\.com/,'#0a66c2','LinkedIn'],['tw',/(^|\.)(twitter|x)\.com/,'var(--ink)','X / Twitter'],['tg',/(^|\.)(t\.me|telegram\.org)/,'#229ed9','Telegram'],['wa',/(^|\.)(wa\.me|whatsapp\.com)/,'#25a244','WhatsApp'],['mp',/(maps\.app\.goo\.gl|goo\.gl\/maps|google\.[a-z.]+\/maps)/,'#34a853','Google Maps']];
+  for(const p of P)if(p[1].test(h))return {i:p[0],c:p[2],n:p[3],u};
+  return {i:'gl',c:'var(--ac)',n:h.split('/')[0]||'Website',u}}
+function acts(c){const n=norm(c.phone),p=plat(c.link);
+  return '<button class="wa b-send">'+ic('wa')+'<span>WhatsApp</span></button>'
+  +(p?'<a class="btn ic-b" style="color:'+p.c+'" href="'+esc(p.u)+'" target="_blank" rel="noopener" aria-label="Open '+esc(p.n)+'" title="'+esc(p.n)+'">'+ic(p.i)+'</a>':'<span class="btn ic-b dis">'+ic('gl')+'</span>')
+  +(n?'<a class="btn ic-b call" href="tel:+'+n+'" aria-label="Call" title="Call">'+ic('ph')+'</a>':'<span class="btn ic-b dis">'+ic('ph')+'</span>')
+  +'<button class="ic-b b-edit" aria-label="Edit" title="Edit">'+ic('ed')+'</button>'}
+function openEdit(id){
+  const c=S.clients.find(x=>x.id===id)||{name:'',link:'',phone:'',cat:S.cats[0],stage:S.stages[0],note:'',source:'',value:'',acc:'',fu:''};
+  const fld=(l,i,h,ta)=>'<div><label>'+l+'</label><div class="fi'+(ta?' ta':'')+'">'+ic(i)+h+'</div></div>';
+  dlg('<h2 class="dh">'+ic(id?'ed':'ua')+'<span>'+(id?'Edit client':'New client')+'</span></h2>'
+  +'<div class="sec"><div class="sct">'+ic('user')+'Basic info</div><div class="g g2">'+fld('Name','user','<input id="e_n" value="'+esc(c.name)+'" placeholder="Client / shop name">')+fld('WhatsApp number','wa','<input id="e_p" inputmode="tel" value="'+esc(c.phone)+'" placeholder="01XXX-XXXXXX">')+'</div>'
+  +'<div><label>Page / profile / website link</label><div class="fi"><span class="lfi" id="lfi"></span><input id="e_l" value="'+esc(c.link)+'" placeholder="Facebook, YouTube, Instagram, website..."></div><div class="mut" id="lfn" style="margin-top:4px"></div></div></div>'
+  +'<div class="sec"><div class="sct">'+ic('lay')+'Stage</div><div class="opts" id="e_st">'+S.stages.map(s=>'<button type="button" class="opt'+(s===c.stage?' on':'')+'" data-s="'+esc(s)+'">'+esc(s)+'</button>').join('')+'</div></div>'
+  +'<div class="sec"><div class="sct">'+ic('wa')+'কোন WhatsApp দিয়ে contact করবেন</div><div class="opts" id="e_a">'+[['','Ask each time'],['Business','Business'],['Personal','Personal']].map(a=>'<button type="button" class="opt'+((c.acc||'')===a[0]?' on':'')+'" data-a="'+a[0]+'">'+a[1]+'</button>').join('')+'</div></div>'
+  +'<div class="sec"><div class="sct">'+ic('tag')+'Details</div><div class="g g2">'+fld('Category (নতুন লিখলে যোগ হবে)','tag','<input id="e_c" list="cl" value="'+esc(c.cat)+'">'+dl('cl',S.cats))+fld('Source','cmp','<input id="e_o" list="sl" value="'+esc(c.source)+'">'+dl('sl',S.sources))+fld('Deal value (৳)','tk','<input id="e_v" type="number" inputmode="numeric" value="'+esc(c.value)+'">')+fld('Follow-up date','cal','<input id="e_f" type="date" value="'+esc(c.fu)+'">')+'</div></div>'
+  +'<div class="sec">'+fld('Note','nt','<textarea id="e_t" placeholder="কথোপকথনের নোট">'+esc(c.note)+'</textarea>',1)
+  +(c.h&&c.h.length?'<details class="hs"><summary>History ('+c.h.length+')</summary>'+c.h.slice(0,10).map(x=>'<div>'+esc(x.d)+': '+esc(x.t)+'</div>').join('')+'</details>':'')+'</div>'
+  +'<div class="foot">'+(id?'<button class="dg" id="del" type="button">'+ic('tr')+'<span>Delete</span></button>':'')+'<button id="x" type="button">Cancel</button><button class="pri" id="sv" type="button">'+ic('ck')+'<span>Save</span></button></div>');
+  const upd=()=>{const p=plat($('#e_l').value);$('#lfi').style.color=p?p.c:'var(--mut)';$('#lfi').innerHTML=ic(p?p.i:'lk');$('#lfn').innerHTML=p?'<b style="color:'+p.c+'">'+esc(p.n)+'</b> লিংক সনাক্ত হয়েছে':'যেকোনো link paste করুন, Facebook, YouTube, Instagram বা Website-এর আইকন নিজে আসবে'};
+  $('#e_l').oninput=upd;upd();
+  ['#e_st','#e_a'].forEach(s=>{$(s).onclick=e=>{const b=e.target.closest('.opt');if(b)[...$(s).children].forEach(x=>x.classList.toggle('on',x===b))}});
+  $('#x').onclick=close;
+  if(id)$('#del').onclick=()=>{const i=S.clients.findIndex(k=>k.id===id),old=S.clients[i];S.clients.splice(i,1);sel.delete(id);save();close();render();toast('Deleted: '+old.name,()=>{S.clients.splice(i,0,old);save();render()})};
+  $('#sv').onclick=()=>{
+    const n=$('#e_n').value.trim();if(!n){$('#e_n').focus();return}
+    const ph=$('#e_p').value.trim();
+    if(ph&&!okNum(ph)&&!confirm('নম্বরটি সঠিক মনে হচ্ছে না। তবুও সেভ করবেন?'))return;
+    if(!id&&ph){const d=S.clients.find(k=>norm(k.phone)===norm(ph));if(d&&!confirm('এই নম্বর আগে থেকেই আছে ('+d.name+'). তবুও যোগ করবেন?'))return}
+    const cat=$('#e_c').value.trim()||'General',src=$('#e_o').value.trim(),st=$('#e_st .opt.on'),ac=$('#e_a .opt.on'),old=c.stage;
+    if(!S.cats.includes(cat))S.cats.push(cat);if(src&&!S.sources.includes(src))S.sources.push(src);
+    Object.assign(c,{name:n,link:$('#e_l').value.trim(),phone:ph,cat,source:src,stage:st?st.dataset.s:c.stage,acc:ac?ac.dataset.a:'',value:$('#e_v').value,fu:$('#e_f').value,note:$('#e_t').value.trim()});
+    if(!id){c.id=uid();hist(c,'Added');S.clients.unshift(c)}else if(old!==c.stage)hist(c,'Stage: '+c.stage);
+    save();close();render();
+  };
+}
+function openSettings(){
+  const fld=(l,i,h,ta,hint)=>'<div><label>'+l+'</label><div class="fi'+(ta?' ta':'')+'">'+ic(i)+h+'</div>'+(hint?'<div class="mut" style="margin-top:3px">'+hint+'</div>':'')+'</div>';
+  dlg('<h2 class="dh">'+ic('sl')+'<span>Settings</span></h2>'
+  +'<div class="sec"><div class="sct">'+ic('lay')+'Pipeline, Category, Source</div><div class="g g2">'
+  +fld('Stages','lay','<textarea id="sg" style="min-height:140px">'+esc(S.stages.join('\n'))+'</textarea>',1,'প্রতি লাইনে একটি। “Client” ও “Not interested” নাম রাখুন (এ দুটো closed ধরা হয়)')
+  +fld('Categories','tag','<textarea id="sc" style="min-height:140px">'+esc(S.cats.join('\n'))+'</textarea>',1,'ক্লায়েন্টের ধরন (যেমন Electric, Baking)')+'</div>'
+  +fld('Sources','cmp','<textarea id="ss" style="min-height:80px">'+esc(S.sources.join('\n'))+'</textarea>',1,'ক্লায়েন্ট কোথায় পেলেন')+'</div>'
+  +'<div class="sec"><div class="sct">'+ic('clk')+'Follow-up & Target</div>'
+  +fld('Follow-up sequence','clk','<textarea id="sq" style="min-height:80px">'+esc(S.seq.map(x=>x.d+', '+x.t).join('\n'))+'</textarea>',1,'প্রতি লাইনে “দিন, টেমপ্লেটের নাম” (যেমন 3, Follow-up)')
+  +'<div class="g g2">'+fld('Daily message target','tgt','<input id="st" type="number" min="1" value="'+S.target+'">')+fld('Default follow-up (দিন)','cal','<input id="sf" type="number" min="1" value="'+S.fu+'">')+'</div></div>'
+  +'<div class="sec"><div class="sct">'+ic('lock')+'Security & Brand</div>'
+  +'<div><label>App PIN lock (এই ডিভাইসে, ৫ মিনিট idle হলে লক)</label><div class="row"><div class="fi" style="flex:1">'+ic('lock')+'<input id="sp" type="password" inputmode="numeric" placeholder="'+(pinOn()?'PIN চালু আছে, বদলাতে নতুন PIN লিখুন':'নতুন PIN লিখুন')+'"></div><button id="pr" type="button">PIN বন্ধ</button></div></div>'
+  +fld('App / business name','brf','<input id="sb" value="'+esc(S.brand)+'">')+'</div>'
+  +'<div class="foot"><button id="x" type="button">Cancel</button><button class="pri" id="sv" type="button">'+ic('ck')+'<span>Save</span></button></div>');
+  $('#x').onclick=close;
+  $('#sv').onclick=()=>{const ls=id=>[...new Set($(id).value.split('\n').map(s=>s.trim()).filter(Boolean))];
+    const a=ls('#sg'),b=ls('#sc');if(!a.length||!b.length)return;
+    const pv=$('#sp').value.trim();if(pv)hash(pv).then(h=>{try{localStorage.setItem(PK,h)}catch(e){}});
+    S.stages=a;S.cats=b;S.sources=ls('#ss');S.brand=$('#sb').value.trim();
+    S.seq=$('#sq').value.split('\n').map(l=>{const p=l.split(',');return {d:parseInt(p[0])||0,t:p.slice(1).join(',').trim()}}).filter(x=>x.d>0&&x.t);
+    S.target=Math.max(1,+$('#st').value||30);S.fu=Math.max(1,+$('#sf').value||3);
+    S.clients.forEach(c=>{if(!S.cats.includes(c.cat))S.cats.push(c.cat);if(!S.stages.includes(c.stage))S.stages.push(c.stage)});
+    save();close();render()};
+}
 boot();
 </script>
 </body>
